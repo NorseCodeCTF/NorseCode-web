@@ -3,10 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>NorseCode CTF Team</title>
+    <link rel="preload" href="img/shield-no.png" as="image">
+    <link rel="preload" href="img/shield-se.png" as="image">
+    <link rel="preload" href="img/shield-se2.png" as="image">
     <style>
       body {
         background-color: #f8f8ff;
         font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+      }
+      a {
+        color: #101010;
+        text-decoration: underline;
+        text-decoration-style: dotted;
+      }
+      a:hover {
+        text-decoration: none;
       }
       @font-face {
           font-family: Norse;
@@ -23,7 +34,7 @@
         font-family: 'Norse', serif;
       }
       .logo {
-        /*width: 333px;*/
+        width: 270px;
       }
       .wrapper {
         text-align: center;
@@ -38,7 +49,7 @@
         font-size: 2.6em;
         font-family: 'Norse', serif;
         display: inline-block;
-        margin: 0 10px;
+        margin: 3px 5px;
       }
       .team a {
         color: inherit;
@@ -50,6 +61,24 @@
       footer, footer a {
         color: #cccccc;
       }
+      span.shield {
+        display: inline-block;
+        height: 70px;
+        width: 70px;
+        background-repeat: no-repeat;
+        vertical-align: middle;
+        background-size: 100%;
+        overflow: hidden;
+      }
+      span.shield-se {
+        background-image: url('img/shield-se.png');
+      }
+      span.shield-se:hover {
+        background-image: url('img/shield-se2.png');
+      }
+      span.shield-no {
+        background-image: url('img/shield-no.png');
+      }
     </style>
   </head>
   <body>
@@ -59,19 +88,33 @@
         <p><img class="logo" src="img/logo.png" alt="NorseCode logo"></p>
       </header>
       <div class="text">
-        <p>Epic completely over the top presentation text here... bla bla bla hacker forces of Odin bla bla..., sploiters of Ragnarök bla bla..., Nordic forces, bla bla... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum quis sapien non suscipit. Cras in accumsan eros, vitae luctus mi. Vestibulum odio erat, imperdiet non accumsan in, rutrum quis tortor. Nullam viverra massa vitae condimentum tincidunt. Nam dignissim porta auctor. Phasellus posuere convallis dolor, et facilisis quam volutpat vitae. Mauris blandit vulputate nulla vel feugiat.</p>
-        <p>NorseCode is a collaboration between</p>
+        <p>The <a href="https://twitter.com/NorseCodeCTF">NorseCode</a> Saga (poetic Edda)<p>
+        <p>
+          Seven tribes gathered their blood-thirsty warriors;<br>
+          From Midgård the highly skilled sploiters of Ragnarök;<br>
+          From Asgård, Vanaheim and Jotunheim the fearsome hackers of Odin;<br>
+          From Niflheim, Nidavellir and Hel the wildest beserkers the world had ever seen.<br>
+        </p>
+        <p>
+          For seven days we crossed the cold land,<br>
+          but other seven days we hit the waves;<br>
+          the third seven days we went onto a dry land.<br>
+        </p>
+        <p>
+          Rites of blood, drums of thunder;<br>
+          Ragnarök was upon us.<br>
+        </p>
+        <p><a href="https://twitter.com/NorseCodeCTF">NorseCode</a> is a collaboration between</p>
       </div>
       <div class="teams">
-        <div class="team"><a href="https://hackingforsoju.team" title="HackingForSoju">HackingForSoju <img src="img/flag-se.png" alt="Sweden"></a></div>
-        <div class="team"><a href="#" title="bootplug">bootplug <img src="img/flag-no.png" alt="Norway"></a></div>
-        <div class="team"><a href="https://watevr.xyz" title="watevr">watevr <img src="img/flag-se.png" alt="Sweden"></a></div>
-        <div class="team"><a href="#" title="LionHack">LionHack <img src="img/flag-se.png" alt="Sweden"></a></div>
-        <div class="team"><a href="#" title="KTHCTF0x1">KTHCTF0x1 <img src="img/flag-se.png" alt="Sweden"></a></div>
-        <div class="team"><a href="#" title="IndianTuesday">IndianTuesday <img src="img/flag-se.png" alt="Sweden"></a></div>
-        <div class="team"><a href="#" title="Danderyds Gymnasium">Danderyds Gymnasium <img src="img/flag-se.png" alt="Sweden"></a></div>
+        <div class="team"><a href="https://hackingforsoju.team" title="HackingForSoju">HackingForSoju <span class="shield shield-se"></a></div>
+        <div class="team"><a href="#" title="bootplug">bootplug <span class="shield shield-no"></span></a></div>
+        <div class="team"><a href="https://watevr.xyz" title="watevr">watevr <span class="shield shield-se"></span></a></div>
+        <div class="team"><a href="#" title="LionHack">LionHack <span class="shield shield-se"></span></a></div>
+        <div class="team"><a href="#" title="KTHCTF0x1">KTHCTF0x1 <span class="shield shield-se"></span></a></div>
+        <div class="team"><a href="#" title="IndianTuesday">IndianTuesday <span class="shield shield-se"></span></a></div>
+        <div class="team"><a href="#" title="Danderyds Gymnasium">Danderyds Gymnasium <span class="shield shield-se"></span></a></div>
       </div>
-      <footer>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></footer>
     </div>
   </body>
 </html>
