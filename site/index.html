@@ -5,6 +5,7 @@
     <title>NorseCode CTF Team</title>
     <link rel="preload" href="img/shield-no.png" as="image">
     <link rel="preload" href="img/shield-se.png" as="image">
+    <link rel="preload" href="img/shield-dk.png" as="image">
     <link rel="preload" href="img/shield-se2.png" as="image">
     <link rel="preload" href="img/shield-se-dk-flawed.png" as="image">
     <link rel="preload" href="img/shield-skane-flawed.png" as="image">
@@ -52,6 +53,9 @@
         font-family: 'Norse', serif;
         display: inline-block;
         margin: 3px 5px;
+        line-height: 75px;
+        text-align: center;
+        height: 75px;
       }
       .team a {
         color: inherit;
@@ -75,6 +79,9 @@
       span.shield-se {
         background-image: url('img/shield-se.png');
       }
+      span.shield-dk {
+        background-image: url('img/shield-dk.png');
+      }
       span.shield-se:hover {
         background-image: url('img/shield-se2.png');
       }
@@ -89,6 +96,9 @@
       }
       .sponsors {
         margin-top: 10px;
+      }
+      img.fra {
+        width: 200px;
       }
     </style>
   </head>
@@ -119,7 +129,7 @@
       </div>
       <div class="teams">
         <div class="team"><a href="https://hackingforsoju.team" title="HackingForSoju">HackingForSoju <span class="shield shield-se"></a></div>
-        <div class="team"><a href="#" title="bootplug">bootplug <span class="shield shield-no"></span></a></div>
+        <div class="team"><a href="https://twitter.com/bootplug_ctf" title="bootplug">bootplug <span class="shield shield-no"></span></a></div>
         <div class="team"><a href="https://watevr.xyz" title="watevr">watevr <span class="shield shield-se"></span></a></div>
         <div class="team"><a href="#" title="LionHack">LionHack <span class="shield shield-se"></span></a></div>
         <div class="team"><a href="#" title="KTHCTF0x1">KTHCTF0x1 <span class="shield shield-se"></span></a></div>
@@ -127,10 +137,11 @@
         <div class="team"><a href="#" title="Danderyds Gymnasium">Danderyds Gymnasium <span class="shield shield-se"></span></a></div>
         <div class="team"><a href="#" title="badfirmware">badfirmware <span class="shield shield-se-dk"></span></a></div>
         <div class="team"><a href="#" title="Team Steam Stream">Team Steam Stream <span class="shield shield-se"></span></a></div>
+        <div class="team"><a href="#" title="Kalmarunionen">Kalmarunionen <span class="shield shield-dk"></span></a></div>
       </div>
       <div class="sponsors">
         sponsored by<br>
-        <a href="https://challenge.fra.se" title="Försvarets Radioanstalt, FRA"><img src="img/fra-logo.png" alt="FRA"></a>
+        <a href="https://challenge.fra.se" title="Försvarets Radioanstalt, FRA"><img class="fra" src="img/fra-logo.png" alt="FRA"></a>
       </div>
     </div>
   </body>
