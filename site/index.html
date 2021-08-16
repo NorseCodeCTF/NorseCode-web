@@ -1,152 +1,194 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>NorseCode CTF Team</title>
-    <link rel="preload" href="img/shield-no.png" as="image">
-    <link rel="preload" href="img/shield-se.png" as="image">
-    <link rel="preload" href="img/shield-dk.png" as="image">
-    <link rel="preload" href="img/shield-se2.png" as="image">
-    <link rel="preload" href="img/shield-se-dk-flawed.png" as="image">
-    <link rel="preload" href="img/shield-skane-flawed.png" as="image">
-    <style>
-      body {
-        background-color: #f8f8ff;
-        font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
-      }
-      a {
-        color: #101010;
-        text-decoration: underline;
-        text-decoration-style: dotted;
-      }
-      a:hover {
-        text-decoration: none;
-      }
-      @font-face {
-          font-family: Norse;
-          src: url("font/Norse.otf") format("opentype");
-      }
-      @font-face {
-          font-family: GraublauWeb;
-          font-weight: bold;
-          src: url("font/Norse-Bold.otf") format("opentype");
-      }
-      h1.header {
-        font-size: 6em;
-        margin: 10px auto 5px;
-        font-family: 'Norse', serif;
-      }
-      .logo {
-        width: 270px;
-      }
+<head>
+  <meta charset="utf-8">
+  <title>NorseCode CTF Team</title>
+  <link rel="preload" href="img/shield-no.png" as="image">
+  <link rel="preload" href="img/shield-se.png" as="image">
+  <link rel="preload" href="img/shield-dk.png" as="image">
+  <link rel="preload" href="img/shield-se2.png" as="image">
+  <link rel="preload" href="img/shield-se-dk-flawed.png" as="image">
+  <link rel="preload" href="img/shield-skane-flawed.png" as="image">
+  <style>
+    body {
+      background-color: #f8f8ff;
+      font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+    }
+
+    a {
+      color: #101010;
+      text-decoration: underline;
+      text-decoration-style: dotted;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    @font-face {
+      font-family: Norse;
+      src: url("font/Norse.otf") format("opentype");
+    }
+
+    @font-face {
+      font-family: GraublauWeb;
+      font-weight: bold;
+      src: url("font/Norse-Bold.otf") format("opentype");
+    }
+
+    h1.header {
+      font-size: 6em;
+      margin: 10px auto 5px;
+      font-family: 'Norse', serif;
+    }
+
+    .logo {
+      width: 270px;
+    }
+
+    .wrapper {
+      text-align: center;
+    }
+
+    @media (min-width: 960px) {
       .wrapper {
-        text-align: center;
+        width: 1080px;
+        margin: 0 auto;
       }
-      @media (min-width: 960px) {
-        .wrapper {
-          width: 1080px;
-          margin: 0 auto;
-        }
-      }
-      .team {
-        font-size: 2.6em;
-        font-family: 'Norse', serif;
-        display: inline-block;
-        margin: 3px 5px;
-        line-height: 75px;
-        text-align: center;
-        height: 75px;
-      }
-      .team a {
-        color: inherit;
-        text-decoration: none;
-      }
-      .team img {
-        vertical-align: middle;
-      }
-      footer, footer a {
-        color: #cccccc;
-      }
-      span.shield {
-        display: inline-block;
-        height: 70px;
-        width: 70px;
-        background-repeat: no-repeat;
-        vertical-align: middle;
-        background-size: 100%;
-        overflow: hidden;
-      }
-      span.shield-se {
-        background-image: url('img/shield-se.png');
-      }
-      span.shield-dk {
-        background-image: url('img/shield-dk.png');
-      }
-      span.shield-se:hover {
-        background-image: url('img/shield-se2.png');
-      }
-      span.shield-no {
-        background-image: url('img/shield-no.png');
-      }
-      span.shield-se-dk {
-        background-image: url('img/shield-se-dk-flawed.png');
-      }
-      span.shield-se-dk:hover {
-        background-image: url('img/shield-skane-flawed.png');
-      }
-      .sponsors {
-        margin-top: 10px;
-      }
-      img.fra {
-        width: 200px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1 class="header">NorseCode</h1>
-        <p><img class="logo" src="img/logo.png" alt="NorseCode logo"></p>
-      </header>
-      <div class="text">
-        <p>The <a href="https://twitter.com/NorseCodeCTF">NorseCode</a> Saga (poetic Edda)<p>
-        <p>
-          Seven tribes gathered their blood-thirsty warriors;<br>
-          From Midgård the highly skilled sploiters of Ragnarök;<br>
-          From Asgård, Vanaheim and Jotunheim the fearsome hackers of Odin;<br>
-          From Niflheim, Nidavellir and Hel the wildest beserkers the world had ever seen.<br>
-        </p>
-        <p>
-          For seven days we crossed the cold land,<br>
-          but other seven days we hit the waves;<br>
-          the third seven days we went onto a dry land.<br>
-        </p>
-        <p>
-          Rites of blood, drums of thunder;<br>
-          Ragnarök was upon us.<br>
-        </p>
-        <p><a href="https://twitter.com/NorseCodeCTF">NorseCode</a> is a collaboration between</p>
-      </div>
-      <div class="teams">
-        <div class="team"><a href="https://hackingforsoju.team" title="HackingForSoju">HackingForSoju <span class="shield shield-se"></a></div>
-        <div class="team"><a href="https://twitter.com/bootplug_ctf" title="bootplug">bootplug <span class="shield shield-no"></span></a></div>
-        <div class="team"><a href="#" title="Kalmarunionen">Kalmarunionen <span class="shield shield-dk"></span></a></div>
-        <div class="team"><a href="https://watevr.xyz" title="watevr">watevr <span class="shield shield-se"></span></a></div>
-        <div class="team"><a href="#" title="LionHack">LionHack <span class="shield shield-se"></span></a></div>
-        <div class="team"><a href="#" title="EPT">EPT <span class="shield shield-no"></span></a></div>
-        <div class="team"><a href="#" title="KTHCTF0x1">KTHCTF0x1 <span class="shield shield-se"></span></a></div>
-        <div class="team"><a href="#" title="IndianTuesday">IndianTuesday <span class="shield shield-se"></span></a></div>
-        <div class="team"><a href="#" title="badfirmware">badfirmware <span class="shield shield-se-dk"></span></a></div>
-        <div class="team"><a href="#" title="Team Steam Stream">Team Steam Stream <span class="shield shield-se"></span></a></div>
-      </div>
+    }
+
+    .team {
+      font-size: 2.6em;
+      font-family: 'Norse', serif;
+      display: inline-block;
+      margin: 3px 5px;
+      line-height: 75px;
+      text-align: center;
+      height: 75px;
+    }
+
+    .team a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .team img {
+      vertical-align: middle;
+    }
+
+    footer,
+    footer a {
+      color: #cccccc;
+    }
+
+    span.shield {
+      display: inline-block;
+      height: 70px;
+      width: 70px;
+      background-repeat: no-repeat;
+      vertical-align: middle;
+      background-size: 100%;
+      overflow: hidden;
+    }
+
+    span.shield-se {
+      background-image: url('img/shield-se.png');
+    }
+
+    span.shield-dk {
+      background-image: url('img/shield-dk.png');
+    }
+
+    span.shield-se:hover {
+      background-image: url('img/shield-se2.png');
+    }
+
+    span.shield-no {
+      background-image: url('img/shield-no.png');
+    }
+
+    span.shield-se-dk {
+      background-image: url('img/shield-se-dk-flawed.png');
+    }
+
+    span.shield-se-dk:hover {
+      background-image: url('img/shield-skane-flawed.png');
+    }
+
+    .sponsor-section {
+      margin-top: 10px;
+      padding: 10px;
+    }
+
+    .sponsors {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      margin-top: 10px;
+      align-items: center;
+
+    }
+
+    .sponsors div {
+      width: 190px;
+      margin: 5px;
+      padding: 5px;
+    }
+
+    .sponsors div img {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1 class="header">NorseCode</h1>
+      <p><img class="logo" src="img/logo.png" alt="NorseCode logo"></p>
+    </header>
+    <div class="text">
+      <p>The <a href="https://twitter.com/NorseCodeCTF">NorseCode</a> Saga (poetic Edda)</p>
+      <p>
+        Seven tribes gathered their blood-thirsty warriors;<br>
+        From Midgård the highly skilled sploiters of Ragnarök;<br>
+        From Asgård, Vanaheim and Jotunheim the fearsome hackers of Odin;<br>
+        From Niflheim, Nidavellir and Hel the wildest beserkers the world had ever seen.<br>
+      </p>
+      <p>
+        For seven days we crossed the cold land,<br>
+        but other seven days we hit the waves;<br>
+        the third seven days we went onto a dry land.<br>
+      </p>
+      <p>
+        Rites of blood, drums of thunder;<br>
+        Ragnarök was upon us.<br>
+      </p>
+      <p><a href="https://twitter.com/NorseCodeCTF">NorseCode</a> is a collaboration between</p>
+    </div>
+    <div class="teams">
+      <div class="team"><a href="https://hackingforsoju.team" title="HackingForSoju">HackingForSoju <span class="shield shield-se"></a></div>
+      <div class="team"><a href="https://twitter.com/bootplug_ctf" title="bootplug">bootplug <span class="shield shield-no"></span></a></div>
+      <div class="team"><a href="#" title="Kalmarunionen">Kalmarunionen <span class="shield shield-dk"></span></a></div>
+      <div class="team"><a href="https://watevr.xyz" title="watevr">watevr <span class="shield shield-se"></span></a></div>
+      <div class="team"><a href="#" title="LionHack">LionHack <span class="shield shield-se"></span></a></div>
+      <div class="team"><a href="#" title="EPT">EPT <span class="shield shield-no"></span></a></div>
+      <div class="team"><a href="#" title="KTHCTF0x1">KTHCTF0x1 <span class="shield shield-se"></span></a></div>
+      <div class="team"><a href="#" title="IndianTuesday">IndianTuesday <span class="shield shield-se"></span></a></div>
+      <div class="team"><a href="#" title="badfirmware">badfirmware <span class="shield shield-se-dk"></span></a></div>
+      <div class="team"><a href="#" title="Team Steam Stream">Team Steam Stream <span class="shield shield-se"></span></a></div>
+    </div>
+    <div class="sponsor-section">
+      sponsored by<br>
       <div class="sponsors">
-        sponsored by<br>
-        <a href="https://challenge.fra.se" title="Försvarets Radioanstalt, FRA"><img class="fra" src="img/fra-logo.png" alt="FRA"></a>
-        <a href="https://digit.au.dk/" title="DIGIT"><img class="fra" src="img/digit-logo.png" alt="FRA"></a>
-        <a href="https://direc.dk/" title="Digital Research Centre Denmark"><img class="fra" src="img/direc-logo.png" alt="FRA"></a>
-        <a href="https://www.jndata.dk/" title="JN Data"><img class="fra" src="img/jndata-logo.png" alt="FRA"></a>
-        <a href="https://sdnit.se" title="SDNit"><img class="fra" src="img/sdnit-logo.png" alt="FRA"></a>
+        <div><a href="https://www.jndata.dk/" title="JN Data"><img class="fra" src="img/jndata-logo.png" alt="FRA"></a></div>
+        <div><a href="https://digit.au.dk/" title="DIGIT"><img class="fra" src="img/digit-logo.png" alt="FRA"></a></div>
+        <div><a href="https://direc.dk/" title="Digital Research Centre Denmark"><img class="fra" src="img/direc-logo.png" alt="FRA"></a></div>
+        <div><a href="https://sdnit.se" title="SDNit"><img class="fra" src="img/sdnit-logo.png" alt="FRA"></a></div>
+        <div><a href="https://challenge.fra.se" title="Försvarets Radioanstalt, FRA"><img class="fra" src="img/fra-logo.png" alt="FRA"></a></div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
 </html>
